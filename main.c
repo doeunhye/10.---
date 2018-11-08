@@ -10,10 +10,13 @@ int main(int argc, char *argv[]) {
 	int *ptr;
 	
 	ptr = &x;
-	printf("ptr이 가리키는 값=%d\n",*ptr);
+	printf("x: %i\n", *ptr);
 	
 	ptr = &y;
-	printf("ptr이 가리키는 값=%d\n",*ptr);
+	printf("y ; %i\n", *ptr);
 	
-	return 0;
-}
+	ptr = &x;
+	*ptr = 20;
+	printf("x : %i\n", x);
+
+	return 0;}
