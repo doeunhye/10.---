@@ -5,18 +5,23 @@
 
 int main(int argc, char *argv[]) {
 	
-	int x=10;
-	int y=20;
+	int grade[5]={10,20,30,40,50};
+	int average=0;
 	int *ptr;
+	int i;
 	
-	ptr = &x;
-	printf("x: %i\n", *ptr);
+	//average setting
+	ptr = grade;
+	//average calculration
+	for (i=0; i<5; i++)
+	{
+		average += ptr[i]; //ptr+i
+	}
+	printf("*average : %i\n", average/5);
 	
-	ptr = &y;
-	printf("y ; %i\n", *ptr);
-	
-	ptr = &x;
-	*ptr = 20;
-	printf("x : %i\n", x);
-
 	return 0;}
+	
+	
+	
+	
+	
