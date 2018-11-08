@@ -5,13 +5,15 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i=365;
-	int *ptr = &i;
-
-	printf("i주소=%u\n", &i);
-	printf("i값=%d\n", i);
+	int x=10;
+	int y=20;
+	int *ptr;
 	
-	printf("ptr의 주소=%u\n", ptr);
-	printf("ptr의 값=%d\n", *ptr);
+	ptr = &x;
+	printf("ptr이 가리키는 값=%d\n",*ptr);
+	
+	ptr = &y;
+	printf("ptr이 가리키는 값=%d\n",*ptr);
+	
 	return 0;
 }
